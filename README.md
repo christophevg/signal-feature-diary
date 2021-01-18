@@ -7,15 +7,15 @@
 Mid January 2021, there was a worldwide moment where many tech savvy and people alike pushed their friends to move away from WhatsApp and adopt the [Signal](https://github.com/signalapp/Signal-iOS) private messenger as a privacy-secure alternative. This resulted in millions of people registering and simply overwhelming the team behind it.
 
 <p align="center">  
-![Technical Difficulties](media/technical-difficulties.png)
+  <img src="media/technical-difficulties.png">
 </p>
 
 <p align="center">  
-![Adding New Servers](media/adding-new-servers.png)
+  <img src="media/adding-new-servers.png">
 </p>
  
 <p align="center">  
-![Back](media/back.png)
+  <img src="media/back.png">
 </p>
  
 I had also contributed (a little) to this tsunami, by urging my friends on WhapsApp to leave the app for the better and more privacy-secure [Signal](https://github.com/signalapp/Signal-iOS) app. The effect was bit of a downer, since most of them came back to me with feedback along the lines of "it doesn't work". Luckily I could keep most of them interested and when things cleared up, I was happy to see most of them on [Signal](https://github.com/signalapp/Signal-iOS), even cheering for the recovery by the team behind it.

@@ -30,10 +30,13 @@ As I'm writing this I just as intrigued to see where this will end ... hopefully
 
 ## Day 0
 
+On of my first conversations on Signal went along the lines of ...
+
 "I don't like that I can't see who has already read my messages. I can do that in WhatsApp :-("
 
 "Yes you can... Long press on message and select the i-icon from the toolbar at the bottom."
 
 "Oh, yeah, but in WhatsApp I can simply swipe left on a message to get that, which is far easier."
 
-She had a point, and I'm on a mission.
+She had a point, and I had a mission.
+

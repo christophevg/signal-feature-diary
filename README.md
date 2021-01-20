@@ -30,13 +30,39 @@ As I'm writing this I just as intrigued to see where this will end ... hopefully
 
 ## Day 0
 
-On of my first conversations on Signal went along the lines of ...
+One of my first conversations on Signal went along the lines of ...  
 
-"I don't like that I can't see who has already read my messages. I can do that in WhatsApp :-("
-
-"Yes you can... Long press on message and select the i-icon from the toolbar at the bottom."
-
-"Oh, yeah, but in WhatsApp I can simply swipe left on a message to get that, which is far easier."
+<p align="center">
+<img src="media/first-conversation.png">
+</p>
 
 She had a point, and I had a mission.
 
+My initial plan of action is to learn to build an iOS app using Swift by implementing a minimal app that mimics the existing conversation support, including the existing swipe right to reply, in a way that it is representative for the way it is currently implemented in the Signal app.
+
+Next I'll be adding the swipe left to reveal the information panel, with as little as changes possible, adding as little code as possible, hopefully breaking as little as possible ;-)
+
+That along with this diary of every step I take is what this repository is all about. 
+
+## Day 1 - First (Xcode) Pains
+
+And it all starts with [Start Developing iOS Apps (Swift)](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/)
+
+> Well, actually it started with a Google search for "building ios app with swift", which turned up that (archived) page on the developer site of Apple ;-)
+
+Okay, that should provide me with a guide tour into the Xcode-based Swift development world of iOS apps. While following these steps, I'm going to project my newfound knowledge onto [Signal](https://github.com/signalapp/Signal-iOS), trying to find entry points into understanding the codebase, because at first sight, I couldn't easily find what I was hoping/expecting to find ;-)
+
+<img src="media/first-app-blank.png" align="right" height="250px">
+Start Xcode, create new app project and run! Nice, a brand new blank iOS app is born. Lets try to run Signal: Open workspace, run ... compilation errors! At first sight it looks like Swift syntax issues. Since I don't expect the Signal developers to commit code with syntactical issues, and knowing that Swift grows at a lightning fast speedl introducing breaking syntax novelties, I suspeted my Xcode 11.2 not being up to date anymore. 
+
+The [building instructions](https://github.com/signalapp/Signal-iOS/blob/master/BUILDING.md#building) are pretty clear on this: 
+
+> "We typically develop against the latest stable version of Xcode."
+
+So, time to upgrade to Xcode 12.3, a download of ±12GB, which apparently requires 40GB of free disk space. The only was to fulfill this requirement was to simply delete my existing Xcode installation entirely. A few hours later the first speedbump was overcome.
+
+<img src="media/signal-registration.png" align="right" height="250px">
+<img src="media/signal-boots-in-simulator.png" align="right" height="250px">
+Building Signal now succeeded and I'm awaiting the simulator to show up, and waiting,... Somehow Xcode thinks it running, but nothing is showing, not even an empty simulator window. After googling a bit, a [StackOverflow article](https://stackoverflow.com/questions/29296360/ios-simulator-is-not-launching) brings a solution. Apparently, the simulator processes were still running from before the Xcode upgrade. So after killing them all and restarting the build... Behold: Signal boots in the simulator. Cool 🤓 Second speedbump cleared.
+
+And it becomes even more cool as you can actually run it as if it was run on a real phone. So, let's try registering... Everything goes smooth, I get a code on my phone, can enter it, but then... I can't use my phone number on two Signal installs, which is not that unlogical. Hm, how to solve that one? That speedbump will have to be resolved soon. But for now, I have a running development version of Signal, I have a blank app running. Time to dive into the "Hello World" world.

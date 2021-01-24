@@ -101,7 +101,7 @@ private func alert(_ message: String) {
 
 This hidious piece of code really makes me vomit. Especially because I can't seem to trim it down to something reasonable:
 
-* `preferredStyle: UIAlertController.Style.alert` and `style: ...Style.default` can't be omitted ... WHY? There clearly `default` values.
+* `preferredStyle: UIAlertController.Style.alert` and `style: ...Style.default` can't be omitted ... WHY? They're clearly `default` values.
 * At first I thought that the two anonymous code blocks also would be required. While writing this fist rant, I tried and discovered they could be removed without any (for now apprant) implications.
 
 So I could at least trim it to:

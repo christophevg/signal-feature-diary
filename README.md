@@ -180,6 +180,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 And my version of an iOS Swift-based Hello World app..
 
-<center>
+<p align="center">  
   <img src="media/hello-world.png" align="center" height="500px">
-</center>
+</p>

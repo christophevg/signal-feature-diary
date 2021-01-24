@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MealViewController.swift
 //  Conversator
 //
 //  Created by Christophe VG on 23/01/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class MessageViewController: UIViewController, UITextFieldDelegate {
 
   //MARK: properties
 

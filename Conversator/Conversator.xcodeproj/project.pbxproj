@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CFA583B525BADC72003430CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA583B425BADC72003430CA /* AppDelegate.swift */; };
 		CFA583B725BADC72003430CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA583B625BADC72003430CA /* SceneDelegate.swift */; };
-		CFA583B925BADC72003430CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA583B825BADC72003430CA /* ViewController.swift */; };
+		CFA583B925BADC72003430CA /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA583B825BADC72003430CA /* MessageViewController.swift */; };
 		CFA583BC25BADC72003430CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA583BA25BADC72003430CA /* Main.storyboard */; };
 		CFA583BE25BADC76003430CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA583BD25BADC76003430CA /* Assets.xcassets */; };
 		CFA583C125BADC76003430CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA583BF25BADC76003430CA /* LaunchScreen.storyboard */; };
+		CFA583CB25BDCF05003430CA /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA583CA25BDCF05003430CA /* MessageTableViewCell.swift */; };
+		CFA583CE25BDD534003430CA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA583CD25BDD534003430CA /* Message.swift */; };
+		CFA583D225BDD6F7003430CA /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA583D125BDD6F7003430CA /* MessageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CFA583B125BADC72003430CA /* Conversator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conversator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA583B425BADC72003430CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFA583B625BADC72003430CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFA583B825BADC72003430CA /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CFA583B825BADC72003430CA /* MessageViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		CFA583BB25BADC72003430CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFA583BD25BADC76003430CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFA583C025BADC76003430CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFA583C225BADC76003430CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA583CA25BDCF05003430CA /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		CFA583CD25BDD534003430CA /* Message.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CFA583D125BDD6F7003430CA /* MessageTableViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				CFA583B425BADC72003430CA /* AppDelegate.swift */,
 				CFA583B625BADC72003430CA /* SceneDelegate.swift */,
-				CFA583B825BADC72003430CA /* ViewController.swift */,
+				CFA583B825BADC72003430CA /* MessageViewController.swift */,
 				CFA583BA25BADC72003430CA /* Main.storyboard */,
 				CFA583BD25BADC76003430CA /* Assets.xcassets */,
 				CFA583BF25BADC76003430CA /* LaunchScreen.storyboard */,
 				CFA583C225BADC76003430CA /* Info.plist */,
+				CFA583CD25BDD534003430CA /* Message.swift */,
+				CFA583CA25BDCF05003430CA /* MessageTableViewCell.swift */,
+				CFA583D125BDD6F7003430CA /* MessageTableViewController.swift */,
 			);
 			path = Conversator;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA583B925BADC72003430CA /* ViewController.swift in Sources */,
+				CFA583B925BADC72003430CA /* MessageViewController.swift in Sources */,
+				CFA583CB25BDCF05003430CA /* MessageTableViewCell.swift in Sources */,
+				CFA583CE25BDD534003430CA /* Message.swift in Sources */,
 				CFA583B525BADC72003430CA /* AppDelegate.swift in Sources */,
+				CFA583D225BDD6F7003430CA /* MessageTableViewController.swift in Sources */,
 				CFA583B725BADC72003430CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

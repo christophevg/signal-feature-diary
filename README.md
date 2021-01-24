@@ -65,7 +65,7 @@ So, time to upgrade to Xcode 12.3, a download of ±12GB, which apparently requir
 
 <img src="media/signal-registration.png" align="right" height="250px">
 <img src="media/signal-boots-in-simulator.png" align="right" height="250px">
-Building Signal now succeeded and I'm awaiting the simulator to show up, and waiting,... Somehow Xcode thinks it running, but nothing is showing, not even an empty simulator window. After googling a bit, a  [StackOverflow article](https://stackoverflow.com/questions/29296360/ios-simulator-is-not-launching) brings a solution. Apparently, the simulator processes were still running from before the Xcode upgrade. So after killing them all and restarting the build... Behold: Signal boots in the simulator. Cool 🤓 Second speedbump cleared.
+Building Signal now succeeded and I'm awaiting the simulator to show up, and waiting,... Somehow Xcode thinks it running, but nothing is showing, not even an empty simulator window. After googling a bit, a [StackOverflow article](https://stackoverflow.com/questions/29296360/ios-simulator-is-not-launching) brings a solution. Apparently, the simulator processes were still running from before the Xcode upgrade. So after killing them all and restarting the build... Behold: Signal boots in the simulator. Cool 🤓 Second speedbump cleared.
 
 And it becomes even more cool as you can actually run it as if it was run on a real phone. So, let's try registering... Everything goes smooth, I get a code on my phone, can enter it, but then... I can't use my phone number on two Signal installs, which is not that unlogical. Hm, how to solve that one? That speedbump will have to be resolved soon. But for now, I have a running development version of Signal, I have a blank app running. Time to dive into the "Hello World" world.
 
@@ -183,3 +183,47 @@ And my version of an iOS Swift-based Hello World app..
 <p align="center">  
   <img src="media/hello-world.png" align="center" height="500px">
 </p>
+
+
+## Day 3 - Adding messages to the Conversation
+
+The tutorial introduces images, which I'm going to skip for now. Most of it. The parts where the life cycle of views is explained and the part regarding gestures _is_ of interest for my own future goals...
+
+The next section deals with creating a custom control. Again, not on my direct path right now, so I'll fast pace this one too. I'll get back to it later when I'll probably need it to create my conversation balloons ;-)
+
+> The best thing I learned from this section was `print` ;-)
+
+Next up: a data model. Although that my initial messages will be simple strings, it doesn't hurt to wrap them in a `Message` data class.
+
+```swift
+//
+//  Message.swift
+//  Conversator
+//
+//  Created by Christophe VG on 24/01/2021.
+//
+
+import UIKit
+
+class Message {
+  var text : String
+    
+  //MARK: Initialization
+     
+  init?(_ text: String) {
+    // Initialization should fail if there is no text
+    if text.isEmpty {
+      return nil
+    }
+    self.text = text
+  }
+}
+```
+
+<img src="media/first-messages.png" align="right" height="250px">
+The section on "Table view" is more interesting and maps to the idea of a vertical stack/table of conversation balloons. Drawing the actual balloons might be something for some future _day_, for now it will be a rather simple label.
+
+So I added a `MessageTableViewCell.swift` and `MessageTableViewController.swift` and renamed the first `ViewController.swift` to `MessageViewController.swift`, added some hard-coded `Message`s and a first, very bare-bone conversation was going on.
+
+This would be enough to start adding gestures to the cells, but finishing the prototype up with some navigation and ability add, edit and remove messages might at least be fun. So I'm not going to skip the next section on navigation just yet ;-)
+
